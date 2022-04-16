@@ -14,6 +14,7 @@
 		DD350526280A9BF000A95D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD350525280A9BF000A95D78 /* Assets.xcassets */; };
 		DD350529280A9BF000A95D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */; };
 		DD350532280AA0F300A95D78 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = DD350531280AA0F300A95D78 /* Core */; };
+		DD350534280AA2A100A95D78 /* HTTPClient in Frameworks */ = {isa = PBXBuildFile; productRef = DD350533280AA2A100A95D78 /* HTTPClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD350532280AA0F300A95D78 /* Core in Frameworks */,
+				DD350534280AA2A100A95D78 /* HTTPClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 			name = Switter;
 			packageProductDependencies = (
 				DD350531280AA0F300A95D78 /* Core */,
+				DD350533280AA2A100A95D78 /* HTTPClient */,
 			);
 			productName = Switter;
 			productReference = DD350519280A9BEE00A95D78 /* Switter.app */;
@@ -374,6 +377,10 @@
 		DD350531280AA0F300A95D78 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
+		};
+		DD350533280AA2A100A95D78 /* HTTPClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HTTPClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
