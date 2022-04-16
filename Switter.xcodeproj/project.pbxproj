@@ -13,6 +13,7 @@
 		DD350524280A9BEE00A95D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD350522280A9BEE00A95D78 /* Main.storyboard */; };
 		DD350526280A9BF000A95D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD350525280A9BF000A95D78 /* Assets.xcassets */; };
 		DD350529280A9BF000A95D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */; };
+		DD350532280AA0F300A95D78 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = DD350531280AA0F300A95D78 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD350532280AA0F300A95D78 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 			children = (
 				DD35051B280A9BEE00A95D78 /* Switter */,
 				DD35051A280A9BEE00A95D78 /* Products */,
+				DD350530280AA0F300A95D78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +70,13 @@
 			path = Switter;
 			sourceTree = "<group>";
 		};
+		DD350530280AA0F300A95D78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +93,9 @@
 			dependencies = (
 			);
 			name = Switter;
+			packageProductDependencies = (
+				DD350531280AA0F300A95D78 /* Core */,
+			);
 			productName = Switter;
 			productReference = DD350519280A9BEE00A95D78 /* Switter.app */;
 			productType = "com.apple.product-type.application";
@@ -356,6 +369,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD350531280AA0F300A95D78 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD350511280A9BEE00A95D78 /* Project object */;
 }
