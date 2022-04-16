@@ -4,25 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "Repository",
+    name: "RemoteRepository",
     platforms: [
         .iOS(SupportedPlatform.IOSVersion.v13)
     ],
     products: [
         .library(
-            name: "Repository",
-            targets: ["Repository"]),
+            name: "RemoteRepository",
+            targets: ["RemoteRepository"]),
     ],
     dependencies: [
         .package(name: "Core", path: "../Core"),
-        .package(name: "RemoteRepository", path: "../RemoteRepository"),
+        .package(name: "HTTPClient", path: "../HTTPClient")
     ],
     targets: [
         .target(
-            name: "Repository",
+            name: "RemoteRepository",
             dependencies: []),
         .testTarget(
-            name: "RepositoryTests",
-            dependencies: ["Repository"]),
+            name: "RemoteRepositoryTests",
+            dependencies: ["RemoteRepository"]),
     ]
 )
