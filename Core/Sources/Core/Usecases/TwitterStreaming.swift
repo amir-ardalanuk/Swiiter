@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TweetStreaming {
+public protocol TweetStreaming {
     func getStream(to keyword: String) async throws -> [Tweet]
 }

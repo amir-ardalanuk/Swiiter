@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct TweetId: Hashable {
-    let id: String
+public struct TweetId: Hashable {
+    public let id: String
 }
 
-struct Tweet: Hashable {
-    let id: TweetId
-    let text: String
-    let author: TweetAuthor
+public struct Tweet: Hashable {
+    public let id: TweetId
+    public let text: String
+    public let author: TweetAuthor
 }

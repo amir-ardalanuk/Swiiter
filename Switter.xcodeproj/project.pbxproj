@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29FF361B2814200E00ECEE8C /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361A2814200E00ECEE8C /* FeatureModule.swift */; };
+		29FF361D2814202500ECEE8C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361C2814202500ECEE8C /* Router.swift */; };
+		29FF361F281420AB00ECEE8C /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361E281420AB00ECEE8C /* HomeModule.swift */; };
+		29FF36212814212400ECEE8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF36202814212400ECEE8C /* HomeViewController.swift */; };
+		29FF36242814213700ECEE8C /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF36232814213700ECEE8C /* HomeViewModelProtocol.swift */; };
+		29FF3626281421E500ECEE8C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF3625281421E500ECEE8C /* HomeViewModel.swift */; };
+		29FF362828143DC100ECEE8C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF362728143DC100ECEE8C /* HomeRouter.swift */; };
+		29FF362F28144AFF00ECEE8C /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF362E28144AFF00ECEE8C /* TweetView.swift */; };
+		29FF363228144E5F00ECEE8C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29FF363128144E5F00ECEE8C /* SDWebImage */; };
 		DD35051D280A9BEE00A95D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35051C280A9BEE00A95D78 /* AppDelegate.swift */; };
 		DD35051F280A9BEE00A95D78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD35051E280A9BEE00A95D78 /* SceneDelegate.swift */; };
-		DD350521280A9BEE00A95D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD350520280A9BEE00A95D78 /* ViewController.swift */; };
-		DD350524280A9BEE00A95D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD350522280A9BEE00A95D78 /* Main.storyboard */; };
 		DD350526280A9BF000A95D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD350525280A9BF000A95D78 /* Assets.xcassets */; };
 		DD350529280A9BF000A95D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */; };
 		DD350532280AA0F300A95D78 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = DD350531280AA0F300A95D78 /* Core */; };
@@ -19,11 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29FF361A2814200E00ECEE8C /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
+		29FF361C2814202500ECEE8C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		29FF361E281420AB00ECEE8C /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		29FF36202814212400ECEE8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		29FF36232814213700ECEE8C /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		29FF3625281421E500ECEE8C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		29FF362728143DC100ECEE8C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		29FF362E28144AFF00ECEE8C /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
 		DD350519280A9BEE00A95D78 /* Switter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Switter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD35051C280A9BEE00A95D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD35051E280A9BEE00A95D78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD350520280A9BEE00A95D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD350523280A9BEE00A95D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD350525280A9BF000A95D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD350528280A9BF000A95D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD35052A280A9BF000A95D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +49,7 @@
 			files = (
 				DD350532280AA0F300A95D78 /* Core in Frameworks */,
 				DD350534280AA2A100A95D78 /* HTTPClient in Frameworks */,
+				29FF363228144E5F00ECEE8C /* SDWebImage in Frameworks */,
 				DD350536280AA53600A95D78 /* Repository in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +57,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29FF361528141F2F00ECEE8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD350525280A9BF000A95D78 /* Assets.xcassets */,
+				DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */,
+				DD35052A280A9BF000A95D78 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29FF361728141F4C00ECEE8C /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				29FF361928141FED00ECEE8C /* Home */,
+				29FF361A2814200E00ECEE8C /* FeatureModule.swift */,
+				29FF361C2814202500ECEE8C /* Router.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		29FF361828141F6400ECEE8C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD35051C280A9BEE00A95D78 /* AppDelegate.swift */,
+				DD35051E280A9BEE00A95D78 /* SceneDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		29FF361928141FED00ECEE8C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				29FF362D28144AEA00ECEE8C /* Views */,
+				29FF36222814212B00ECEE8C /* ViewModel */,
+				29FF361E281420AB00ECEE8C /* HomeModule.swift */,
+				29FF36202814212400ECEE8C /* HomeViewController.swift */,
+				29FF362728143DC100ECEE8C /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		29FF36222814212B00ECEE8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29FF36232814213700ECEE8C /* HomeViewModelProtocol.swift */,
+				29FF3625281421E500ECEE8C /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		29FF362A281446D600ECEE8C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		29FF362D28144AEA00ECEE8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29FF362E28144AFF00ECEE8C /* TweetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DD350510280A9BEE00A95D78 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +142,10 @@
 		DD35051B280A9BEE00A95D78 /* Switter */ = {
 			isa = PBXGroup;
 			children = (
-				DD35051C280A9BEE00A95D78 /* AppDelegate.swift */,
-				DD35051E280A9BEE00A95D78 /* SceneDelegate.swift */,
-				DD350520280A9BEE00A95D78 /* ViewController.swift */,
-				DD350522280A9BEE00A95D78 /* Main.storyboard */,
-				DD350525280A9BF000A95D78 /* Assets.xcassets */,
-				DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */,
-				DD35052A280A9BF000A95D78 /* Info.plist */,
+				29FF362A281446D600ECEE8C /* Common */,
+				29FF361828141F6400ECEE8C /* App */,
+				29FF361728141F4C00ECEE8C /* Module */,
+				29FF361528141F2F00ECEE8C /* Resources */,
 			);
 			path = Switter;
 			sourceTree = "<group>";
@@ -101,6 +177,7 @@
 				DD350531280AA0F300A95D78 /* Core */,
 				DD350533280AA2A100A95D78 /* HTTPClient */,
 				DD350535280AA53600A95D78 /* Repository */,
+				29FF363128144E5F00ECEE8C /* SDWebImage */,
 			);
 			productName = Switter;
 			productReference = DD350519280A9BEE00A95D78 /* Switter.app */;
@@ -130,6 +207,9 @@
 				Base,
 			);
 			mainGroup = DD350510280A9BEE00A95D78;
+			packageReferences = (
+				29FF363028144E5F00ECEE8C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = DD35051A280A9BEE00A95D78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,7 +226,6 @@
 			files = (
 				DD350529280A9BF000A95D78 /* LaunchScreen.storyboard in Resources */,
 				DD350526280A9BF000A95D78 /* Assets.xcassets in Resources */,
-				DD350524280A9BEE00A95D78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,23 +236,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD350521280A9BEE00A95D78 /* ViewController.swift in Sources */,
+				29FF361B2814200E00ECEE8C /* FeatureModule.swift in Sources */,
+				29FF361D2814202500ECEE8C /* Router.swift in Sources */,
+				29FF36242814213700ECEE8C /* HomeViewModelProtocol.swift in Sources */,
+				29FF3626281421E500ECEE8C /* HomeViewModel.swift in Sources */,
+				29FF361F281420AB00ECEE8C /* HomeModule.swift in Sources */,
 				DD35051D280A9BEE00A95D78 /* AppDelegate.swift in Sources */,
 				DD35051F280A9BEE00A95D78 /* SceneDelegate.swift in Sources */,
+				29FF362828143DC100ECEE8C /* HomeRouter.swift in Sources */,
+				29FF362F28144AFF00ECEE8C /* TweetView.swift in Sources */,
+				29FF36212814212400ECEE8C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DD350522280A9BEE00A95D78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD350523280A9BEE00A95D78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD350527280A9BF000A95D78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -310,7 +388,8 @@
 				INFOPLIST_FILE = Switter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,7 +416,8 @@
 				INFOPLIST_FILE = Switter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,7 +456,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		29FF363028144E5F00ECEE8C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		29FF363128144E5F00ECEE8C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29FF363028144E5F00ECEE8C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		DD350531280AA0F300A95D78 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;

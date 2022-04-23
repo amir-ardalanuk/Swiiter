@@ -8,11 +8,14 @@
 
 import Foundation
 
-final class MockTweetStream: TweetStreaming {
+public final class MockTweetStream: TweetStreaming {
 
-    var handleResult: (() -> Result<[Tweet], Error>)?
+    public init() {}
 
-    func getStream(to keyword: String) async throws -> [Tweet] {
+    public var handleResult: (() -> Result<[Tweet], Error>)?
+    
+    public func getStream(to keyword: String) async throws -> [Tweet] {
+        sleep(3)
         if let handleResult = handleResult {
             switch handleResult() {
             case let .success(values):
