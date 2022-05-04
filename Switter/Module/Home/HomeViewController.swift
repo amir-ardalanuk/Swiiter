@@ -9,7 +9,6 @@ import UIKit
 import Combine
 
 class HomeViewController: UIViewController {
-
     // MARK: - Properties
     private var cancellabels = Set<AnyCancellable>()
     let viewModel: HomeViewModelProtocol
@@ -19,6 +18,7 @@ class HomeViewController: UIViewController {
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
         searchBar.delegate = self
+        searchBar.placeholder = Constant.placeholder
         return searchBar
     }()
 
@@ -29,10 +29,11 @@ class HomeViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.refreshControl = refreshController
-        tableView.estimatedRowHeight = 50
+        tableView.estimatedRowHeight = Constant.estimateHeight
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.contentInset = .init(top: 16, left: 0, bottom: 0, right: 0)
+        tableView.contentInset = Constant.listContentInset
         tableView.contentInsetAdjustmentBehavior = .never
+        tableView.delegate = self
         return tableView
     }()
 
@@ -104,6 +105,16 @@ class HomeViewController: UIViewController {
             .sink { [weak self] tweets in
                 self?.makeSnopshot(tweets)
         }.store(in: &cancellabels)
+
+        viewModel.state
+            .compactMap(\.routing)
+            .receive(on: RunLoop.main)
+            .sink { [weak self] route in
+                switch route {
+                case let .tweetDetail(tweet):
+                    self?.router.showDetail(of: tweet)
+                }
+        }.store(in: &cancellabels)
     }
 
     func makeSnopshot(_ tweets: [TweetItem]) {
@@ -124,7 +135,25 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController {}
+// MARK: - TableViewDelegate
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        cell.selectionStyle = .none
+        viewModel.handel(action: .selectTweet(indexPath))
+    }
+}
+
+// MARK: - Constant
+extension HomeViewController {
+    enum Constant {
+        static let placeholder = "Search keyword ... "
+        static let estimateHeight = 50.0
+        static let listContentInset = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+    }
+}
+
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchTextPublisher.send(searchText)

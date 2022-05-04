@@ -39,6 +39,11 @@ class HomeViewModel: HomeViewModelProtocol {
         switch action {
         case let .search(key):
             getStream(for: key)
+        case let .selectTweet(indexPath):
+            guard let entity = state.value.tweets?.value?[indexPath.row] else {
+                return 
+            }
+            updateState(routing: .tweetDetail(entity.tweet))
         }
     }
 

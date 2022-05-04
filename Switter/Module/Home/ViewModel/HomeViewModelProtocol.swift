@@ -18,6 +18,7 @@ protocol HomeViewModelProtocol {
 //MARK: - Action
 enum HomeAction: Hashable {
     case search(String)
+    case selectTweet(IndexPath)
 }
 
 enum LoadableDate<T: Hashable> {
@@ -50,12 +51,11 @@ enum LoadableDate<T: Hashable> {
 
 struct TweetItem: Hashable, Identifiable {
     var id: TweetId { tweet.id }
-
     let tweet: Tweet
 }
 
 enum RouteAction {
-    case openTweetDetail
+    case tweetDetail(Tweet)
 }
 
 //MARK: - State
@@ -74,7 +74,7 @@ struct HomeState {
         .init(
             tweets: tweets ?? self.tweets,
             streamKeyword: streamKeyword ?? self.streamKeyword,
-            routing: routing ?? self.routing,
+            routing: routing,
             errorMessage: errorMessage
         )
     }

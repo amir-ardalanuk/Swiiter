@@ -45,21 +45,18 @@ class TweetView: UIView, UIContentView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 16)
-        label.textAlignment = .right
         return label
     }()
 
     private lazy var textLabel: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 13)
-        label.textAlignment = .right
+        label.font = .systemFont(ofSize: 13)
         return label
     }()
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 13)
-        label.textAlignment = .right
         label.textColor = .gray
         return label
     }()
@@ -121,11 +118,11 @@ class TweetView: UIView, UIContentView {
     // MARK: - fetch Config on View
 
     private func configView() {
-        guard let configuration = tweetConfiguration else { return }
-        titleLabel.text = configuration.item.author.userName
-        descriptionLabel.text = configuration.item.id.id
-        profileImageView.sd_setImage(with: configuration.item.author.profilePicture)
-        textLabel.text = configuration.item.text
+        guard let configuration = tweetConfiguration, let tweet = configuration.item else { return }
+        titleLabel.text = tweet.author.userName
+        descriptionLabel.text = tweet.id.id
+        profileImageView.sd_setImage(with: tweet.author.profilePicture)
+        textLabel.text = tweet.text
     }
 
 }
@@ -141,7 +138,7 @@ extension TweetView {
 }
 
 struct TweetConfiguration: UIContentConfiguration {
-    let item: Tweet
+    let item: Tweet?
 
     func makeContentView() -> UIView & UIContentView {
         TweetView(configuration: self)
@@ -150,6 +147,4 @@ struct TweetConfiguration: UIContentConfiguration {
     func updated(for state: UIConfigurationState) -> TweetConfiguration {
         self
     }
-
-
 }

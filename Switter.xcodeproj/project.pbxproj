@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29D21DCB28210C45002AB2F8 /* TweetDetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D21DC728210C45002AB2F8 /* TweetDetailModule.swift */; };
+		29D21DCC28210C45002AB2F8 /* TweetDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D21DC828210C45002AB2F8 /* TweetDetailRouter.swift */; };
+		29D21DCD28210C45002AB2F8 /* TweetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D21DC928210C45002AB2F8 /* TweetDetailViewController.swift */; };
+		29D21DCE28210C45002AB2F8 /* TweetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D21DCA28210C45002AB2F8 /* TweetDetailViewModel.swift */; };
+		29D21DD028210E8D002AB2F8 /* TweetDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D21DCF28210E8D002AB2F8 /* TweetDetailViewModelProtocol.swift */; };
 		29FF361B2814200E00ECEE8C /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361A2814200E00ECEE8C /* FeatureModule.swift */; };
 		29FF361D2814202500ECEE8C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361C2814202500ECEE8C /* Router.swift */; };
 		29FF361F281420AB00ECEE8C /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF361E281420AB00ECEE8C /* HomeModule.swift */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29D21DC728210C45002AB2F8 /* TweetDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailModule.swift; sourceTree = "<group>"; };
+		29D21DC828210C45002AB2F8 /* TweetDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailRouter.swift; sourceTree = "<group>"; };
+		29D21DC928210C45002AB2F8 /* TweetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewController.swift; sourceTree = "<group>"; };
+		29D21DCA28210C45002AB2F8 /* TweetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewModel.swift; sourceTree = "<group>"; };
+		29D21DCF28210E8D002AB2F8 /* TweetDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDetailViewModelProtocol.swift; sourceTree = "<group>"; };
 		29FF361A2814200E00ECEE8C /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
 		29FF361C2814202500ECEE8C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		29FF361E281420AB00ECEE8C /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
@@ -57,6 +67,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29D21DC628210C2A002AB2F8 /* TweetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				29D21DC728210C45002AB2F8 /* TweetDetailModule.swift */,
+				29D21DC828210C45002AB2F8 /* TweetDetailRouter.swift */,
+				29D21DC928210C45002AB2F8 /* TweetDetailViewController.swift */,
+				29D21DCA28210C45002AB2F8 /* TweetDetailViewModel.swift */,
+				29D21DCF28210E8D002AB2F8 /* TweetDetailViewModelProtocol.swift */,
+			);
+			path = TweetDetail;
+			sourceTree = "<group>";
+		};
 		29FF361528141F2F00ECEE8C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +92,7 @@
 		29FF361728141F4C00ECEE8C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				29D21DC628210C2A002AB2F8 /* TweetDetail */,
 				29FF361928141FED00ECEE8C /* Home */,
 				29FF361A2814200E00ECEE8C /* FeatureModule.swift */,
 				29FF361C2814202500ECEE8C /* Router.swift */,
@@ -239,11 +262,16 @@
 				29FF361B2814200E00ECEE8C /* FeatureModule.swift in Sources */,
 				29FF361D2814202500ECEE8C /* Router.swift in Sources */,
 				29FF36242814213700ECEE8C /* HomeViewModelProtocol.swift in Sources */,
+				29D21DCC28210C45002AB2F8 /* TweetDetailRouter.swift in Sources */,
 				29FF3626281421E500ECEE8C /* HomeViewModel.swift in Sources */,
+				29D21DD028210E8D002AB2F8 /* TweetDetailViewModelProtocol.swift in Sources */,
 				29FF361F281420AB00ECEE8C /* HomeModule.swift in Sources */,
 				DD35051D280A9BEE00A95D78 /* AppDelegate.swift in Sources */,
 				DD35051F280A9BEE00A95D78 /* SceneDelegate.swift in Sources */,
+				29D21DCB28210C45002AB2F8 /* TweetDetailModule.swift in Sources */,
 				29FF362828143DC100ECEE8C /* HomeRouter.swift in Sources */,
+				29D21DCD28210C45002AB2F8 /* TweetDetailViewController.swift in Sources */,
+				29D21DCE28210C45002AB2F8 /* TweetDetailViewModel.swift in Sources */,
 				29FF362F28144AFF00ECEE8C /* TweetView.swift in Sources */,
 				29FF36212814212400ECEE8C /* HomeViewController.swift in Sources */,
 			);
